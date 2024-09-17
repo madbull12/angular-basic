@@ -18,12 +18,12 @@ export interface Option {
 }
 
 export interface Product {
-    id:number;
+    id?:string;
     title:string;
     price:string;
     category:string;
-    description:string;
-    image:string;
+    description?:string;
+    image?:string;
 }
 
 export interface PaginationParams {

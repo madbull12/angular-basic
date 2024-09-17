@@ -1,0 +1,24 @@
+<p-dialog header="Add Product" [(visible)]="display" [modal]="true" [closable]="false">
+    <div>
+        <div>
+            <span>Title:</span>
+            <input type="text" [(ngModel)]="product.title">
+        </div>
+        <div>
+            <span>Price:</span>
+            <input type="text" [(ngModel)]="product.price">
+        </div>
+        <div>
+            <span>Category:</span>
+            <input type="text" [(ngModel)]="product.category">
+        </div>
+        <div>
+            <span>Desc:</span>
+            <input type="text" [(ngModel)]="product.description">
+        </div>
+    </div>
+    <p-footer>
+        <button type="button" pButton icons="pi pi-check" (click)="onConfirm()" label="Confirm"></button>
+        <button type="button" pButton icons="pi pi-times" (click)="onCancel()" label="Cancel"></button>
+    </p-footer>
+</p-dialog>

@@ -13,7 +13,24 @@
       <p>{{ product.category }}</p>
       <p>${{ product.price }}</p>
   </div>
-
+  <div class="flex gap-x-2">
+    <button
+      type="button"
+      pButton
+      icon="pi pi-pencil"
+      (click)="editProduct()"
+      label="Edit"
+    ></button>
+    <button
+      type="button"
+      pButton
+      icon="pi pi-trash"
+      (click)="confirmDelete()"
+      label="Delete"
+      class="p-button-danger"
+      #deleteButton
+    ></button>
+  </div>
 
 
 </p-card>
