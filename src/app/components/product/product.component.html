@@ -1,0 +1,19 @@
+<p-card [style]="{ width: '360px' }">
+  <ng-template pTemplate="header">
+    <img
+      class="rounded-lg w-[100px] h-[100px]"
+      alt="Card"
+      src='{{ product.image }}'
+    />
+  </ng-template>
+  <div class="space-y-2 mt-2">
+    <p class="font-bold">
+        {{ product.title }}
+      </p>
+      <p>{{ product.category }}</p>
+      <p>${{ product.price }}</p>
+  </div>
+
+
+
+</p-card>
